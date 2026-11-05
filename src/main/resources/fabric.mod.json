@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "kaiserautofish",
+  "version": "${version}",
+  "name": "Kaiser AutoFish",
+  "description": "Pesca automatica para Minecraft Java 1.20.1 Fabric.",
+  "authors": ["Kaiser"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["br.kaiser.autofish.KaiserAutoFishClient"]
+  },
+  "mixins": [
+    {
+      "config": "kaiserautofish.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
